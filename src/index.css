@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", "Noto Serif Ethiopic", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-ethiopic: "Noto Serif Ethiopic", serif;
+
+  --color-emerald-deep: #0b1410;
+  --color-emerald-studio: #111f18;
+  --color-emerald-velvet: #172b21;
+  --color-gold-champagne: #d4b373;
+  --color-gold-soft: #e5cc99;
+  --color-gold-muted: #9e8149;
+  --color-ivory: #f6f2ea;
+  --color-travertine: #ece5d8;
+  --color-obsidian: #070b09;
+  --color-ink: #161b18;
+}
+
+@layer base {
+  html {
+    background-color: #0b1410;
+    color: #f6f2ea;
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #0b1410;
+  }
+
+  h1, h2, h3, h4, .font-editorial {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Subtle architectural grain overlay for serene tactile warmth */
+.architectural-grain {
+  background-image: radial-gradient(rgba(212, 179, 115, 0.045) 1px, transparent 0);
+  background-size: 28px 28px;
+}
+
+/* Serene gold hairline */
+.gold-hairline {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(212, 179, 115, 0.45) 50%,
+    transparent 100%
+  );
+}
+
+/* Custom calm scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1410;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 179, 115, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 179, 115, 0.65);
+}
+
+/* Smooth horizontal marquee for partners */
+@keyframes calm-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-calm-marquee {
+  animation: calm-marquee 38s linear infinite;
+}
+
+.animate-calm-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Glass luxury surface */
+.glass-emerald {
+  background: rgba(17, 31, 24, 0.68);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(212, 179, 115, 0.16);
+}
+
+.glass-ivory {
+  background: rgba(246, 242, 234, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(22, 27, 24, 0.08);
+}

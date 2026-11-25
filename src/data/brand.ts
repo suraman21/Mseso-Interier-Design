@@ -19,6 +19,7 @@ export const BRAND = {
       'Whether we begin with a raw concrete shell, a careful demolition, or an iconic institutional headquarters, our approach unites creative vision, color mastery, and disciplined engineering so every line endures.',
     ],
     portraits: {
+      ownerProfile: '/images/real/betelhem-profile.jpg',
       editorialCampaign: '/images/real/betty-campaign-clean.jpg',
       officialCeo: 'https://misesointeriors.com/wp-content/uploads/2026/03/Owner.png',
       studioPortrait: 'https://misesointeriors.com/wp-content/uploads/2025/07/betty.jpg',

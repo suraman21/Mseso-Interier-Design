@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 pb-16">
           <div className="lg:col-span-5 space-y-6">
             <Link to="/" className="inline-flex items-center gap-3">
-              <MisesoPillarMark className="h-8 w-8 text-[#D4B373]" />
+              <MisesoPillarMark className="h-12 px-2.5 py-2" />
               <div className="flex items-center gap-2.5 font-editorial text-2xl tracking-[0.24em]">
                 <span className="text-[#D4B373] tracking-normal">ምሰሶ</span>
                 <span className="h-4 w-px bg-[#D4B373]/35" />

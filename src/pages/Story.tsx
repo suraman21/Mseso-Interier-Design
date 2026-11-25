@@ -65,7 +65,7 @@ export const Story: React.FC = () => {
             >
               <div className="relative overflow-hidden rounded-3xl border border-[#D4B373]/30 bg-[#101D16] shadow-[0_30px_80px_rgba(0,0,0,0.5)]">
                 <CalmImage
-                  src={BRAND.founder.portraits.editorialCampaign}
+                  src={BRAND.founder.portraits.ownerProfile}
                   alt="Betelhem Engida, Founder and CEO of Miseso Interior Design"
                   priority
                   className="aspect-[4/5] w-full object-cover object-top"
@@ -94,18 +94,22 @@ export const Story: React.FC = () => {
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:items-center">
             <CalmReveal className="lg:col-span-5 space-y-6">
-              <div className="rounded-3xl bg-[#0B1410] p-10 text-center text-[#F6F2EA] border border-[#D4B373]/30 shadow-2xl">
-                <p className="text-[11px] uppercase tracking-[0.3em] text-[#D4B373]">
+              <div className="rounded-3xl bg-white p-10 text-center text-[#0E1913] border border-[#121D16]/12 shadow-[0_24px_70px_rgba(11,20,16,0.12)]">
+                <p className="text-[11px] uppercase tracking-[0.3em] text-[#8E6F36] font-medium">
                   Amharic Architectural Heritage
                 </p>
-                <p className="mt-5 font-[var(--font-ethiopic)] text-7xl sm:text-8xl text-[#D4B373] leading-none">
-                  {BRAND.amharicName}
-                </p>
-                <p className="mt-4 font-editorial text-2xl tracking-[0.22em] uppercase">
+                <div className="mt-6 flex justify-center">
+                  <img
+                    src="/images/real/miseso-logo.png"
+                    alt="MISESO (ምሰሶ) Official House & Pillar Emblem"
+                    className="h-44 sm:h-52 w-auto object-contain"
+                  />
+                </div>
+                <p className="mt-5 font-editorial text-2xl tracking-[0.22em] uppercase text-[#0E1913]">
                   MI · SE · SO
                 </p>
-                <div className="mx-auto my-6 h-px w-24 bg-[#D4B373]/40" />
-                <p className="text-sm leading-relaxed text-[#F6F2EA]/75">{BRAND.meaning}</p>
+                <div className="mx-auto my-5 h-px w-24 bg-[#9A7A40]/40" />
+                <p className="text-sm leading-relaxed text-[#3B4A40]">{BRAND.meaning}</p>
               </div>
             </CalmReveal>
 
@@ -167,20 +171,20 @@ export const Story: React.FC = () => {
               <div className="overflow-hidden rounded-2xl border border-[#D4B373]/20 aspect-[4/4.3]">
                 <CalmImage
                   src={BRAND.founder.portraits.onSiteDemolition}
-                  alt="Betelhem Engida walking an active demolition site"
+                  alt="Miseso active demolition and structural preparation site"
                   className="h-full w-full object-cover"
                 />
               </div>
               <p className="text-[10px] uppercase tracking-[0.24em] text-[#D4B373]">
-                01 · Hands-On Site Leadership
+                01 · Hands-On Site Execution
               </p>
               <h3 className="font-editorial text-2xl text-[#F6F2EA]">
                 From Raw Blockwork &amp; Demolition
               </h3>
               <p className="text-xs leading-relaxed text-[#F6F2EA]/65">
-                Betelhem personally walks active demolition and renovation floors with site
-                engineers and foremen to verify spatial flow, curved corridor walls, and MEP
-                alignment before finishing begins.
+                Miseso’s site engineers and finishing foremen verify spatial flow, curved corridor
+                walls, and MEP alignment during active demolition and renovation stages before
+                luxury finishing begins.
               </p>
             </CalmReveal>
 

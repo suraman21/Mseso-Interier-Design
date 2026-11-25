@@ -38,7 +38,7 @@ export const Preloader: React.FC = () => {
             transition={{ duration: 0.75, delay: 0.2, ease: CALM_EASE }}
             className="flex flex-col items-center gap-3"
           >
-            <MisesoPillarMark className="h-9 w-9 text-[#D4B373]" />
+            <MisesoPillarMark className="h-16 px-3.5 py-2.5 rounded-2xl" />
             <div className="flex items-center gap-3 text-2xl sm:text-3xl tracking-[0.28em] font-editorial font-light">
               <span className="text-[#D4B373] tracking-normal font-[var(--font-ethiopic)]">ምሰሶ</span>
               <span className="h-4 w-px bg-[#D4B373]/40" />

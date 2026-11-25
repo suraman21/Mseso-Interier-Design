@@ -47,7 +47,7 @@ export const Navbar: React.FC = () => {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 sm:px-8">
           <Link to="/" className="group flex items-center gap-3 focus:outline-none">
-            <MisesoPillarMark className="h-7 w-7 text-[#D4B373] transition-transform duration-700 group-hover:scale-105" />
+            <MisesoPillarMark className="h-10 transition-transform duration-700 group-hover:scale-105" />
             <div className="flex flex-col leading-none">
               <div className="flex items-center gap-2 font-editorial text-lg sm:text-xl tracking-[0.22em] text-[#F6F2EA]">
                 <span className="text-[#D4B373] tracking-normal text-base sm:text-lg">ምሰሶ</span>

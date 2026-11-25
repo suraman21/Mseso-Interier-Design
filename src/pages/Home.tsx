@@ -133,7 +133,7 @@ export const Home: React.FC = () => {
                 <div className="flex items-center gap-4">
                   <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full border border-[#D4B373]/50">
                     <CalmImage
-                      src={BRAND.founder.portraits.editorialCampaign}
+                      src={BRAND.founder.portraits.ownerProfile}
                       alt="Betelhem Engida, Founder and CEO of Miseso Interior Design"
                       className="h-full w-full object-cover object-top"
                     />
@@ -190,8 +190,8 @@ export const Home: React.FC = () => {
               <div className="relative">
                 <div className="overflow-hidden rounded-2xl border border-[#121D16]/10 shadow-[0_24px_65px_rgba(11,20,16,0.14)]">
                   <CalmImage
-                    src={BRAND.founder.portraits.editorialCampaign}
-                    alt="Betelhem Engida in a green emerald architectural interior"
+                    src={BRAND.founder.portraits.ownerProfile}
+                    alt="Betelhem Engida, Founder & CEO of Miseso Interior Design"
                     className="aspect-[4/5] w-full object-cover object-top"
                   />
                 </div>
@@ -366,7 +366,7 @@ export const Home: React.FC = () => {
             <TransformationSlider
               beforeImage={BRAND.founder.portraits.onSiteDemolition}
               afterImage="https://misesointeriors.com/wp-content/uploads/2026/04/tracon-2.png"
-              beforeLabel="Site Execution · Betelhem On-Site Demolition Walk"
+              beforeLabel="Before · Raw Demolition & Site Execution"
               afterLabel="Turnkey Handover · Tracon Real Estate 4-BR Residence"
             />
           </CalmReveal>

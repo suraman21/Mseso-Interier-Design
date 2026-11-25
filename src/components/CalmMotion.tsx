@@ -120,14 +120,24 @@ export const CalmImage: React.FC<{
   );
 };
 
-export const MisesoPillarMark: React.FC<{ className?: string }> = ({ className = 'w-7 h-7' }) => (
-  <svg viewBox="0 0 40 40" fill="none" className={className} aria-hidden="true">
-    <rect x="6" y="4" width="28" height="1.8" fill="currentColor" opacity="0.9" />
-    <rect x="10" y="8" width="20" height="1" fill="currentColor" opacity="0.55" />
-    <rect x="18.2" y="10" width="3.6" height="20" fill="currentColor" />
-    <rect x="13" y="12" width="1.2" height="16" fill="currentColor" opacity="0.45" />
-    <rect x="25.8" y="12" width="1.2" height="16" fill="currentColor" opacity="0.45" />
-    <rect x="10" y="31" width="20" height="1" fill="currentColor" opacity="0.55" />
-    <rect x="6" y="34.2" width="28" height="1.8" fill="currentColor" opacity="0.9" />
-  </svg>
-);
+export const MisesoPillarMark: React.FC<{
+  className?: string;
+  framed?: boolean;
+}> = ({ className = 'h-9 w-auto', framed = true }) =>
+  framed ? (
+    <span
+      className={`inline-flex items-center justify-center rounded-xl bg-[#F6F2EA] px-2 py-1.5 ring-1 ring-[#D4B373]/45 shadow-[0_4px_20px_rgba(0,0,0,0.3)] ${className}`}
+    >
+      <img
+        src="/images/real/miseso-logo.png"
+        alt="MISESO (ምሰሶ) Official Logo"
+        className="h-full w-auto object-contain"
+      />
+    </span>
+  ) : (
+    <img
+      src="/images/real/miseso-logo.png"
+      alt="MISESO (ምሰሶ) Official Logo"
+      className={`object-contain ${className}`}
+    />
+  );
